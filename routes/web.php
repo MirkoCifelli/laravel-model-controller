@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// Controllers
+use App\Http\Controllers\Guest\PageController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +15,5 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', [PageController::class, 'index'])->name('home');
 
-Route::get('/', function () {
-    return view('welcome');
-});
