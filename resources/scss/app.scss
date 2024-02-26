@@ -1,13 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 h1 {
     font-size: 80px;
+    font-weight: bolder;
 }
 .card {
     --bs-card-border-color: none;
 }
 .card-body {
     background-color: lightcoral;
-    color: white;
+    color: black;
+    font-weight: bold;
     font-size: 20px;
     border-radius: 20px;
     h3 {
